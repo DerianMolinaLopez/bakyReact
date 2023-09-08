@@ -3,9 +3,24 @@
      flex-direction: column;
      justify-content: center;
      margin-bottom: 3px;
+     border-right: solid #2F3336 1px; 
+     padding-right: 4rem;
+     margin-right: 2rem;
 }
 .boton{
     color:white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
+}
+.union{
+    display:flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    justify-content: space-around;
+
+}
+.botonApariencia{
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: flex-start;
 }
