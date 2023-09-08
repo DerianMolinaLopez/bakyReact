@@ -1,3 +1,26 @@
+:root{
+    
+--fuenteEnlace:
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Helvetica,
+Arial,
+sans-serif;
+
+}
+/*
+   
+"TwitterChirp"
+-apple-system
+BlinkMacSystemFont
+"Segoe UI"
+Roboto
+Helvetica
+Arial
+sans-serif
+*/
+
 .aside{
      display: flex;
      flex-direction: column;
@@ -8,17 +31,20 @@
     color:white;
     text-decoration: none;
     font-size: 1.5rem;
+    font-family: var(--fuenteEnlace);
 }
 .centrarAux{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   
-  
+}
+.marcoprincipal{
+    border-right: solid #2F3336 1px;
+    border-left: solid #2F3336 1px;
 
 }
 .marco{
-    border-right: solid #2F3336 1px;
     margin-left: 4.5rem;
 }
 .asideM{
@@ -39,17 +65,43 @@
   border-radius: 20px;
   border-style: none;
   color: white;   
+  width: 100%;
 }
 .contenedorPrincipal{
     width: 50rem;
+    border-right: solid #2F3336 1px;
+    border-left: solid #2F3336 1px;
 }
 .redondeo{
     border-radius: 20px;
     margin-bottom: 1.5rem;
     width: auto;
-    height: 3rem;
+    height: 2rem;
     transition: .2s;
 }
 .redondeo:hover{
     background-color: #2F3336;
+}
+.botonEnlace{
+   background-color: #1A8CD8;
+   border-radius: 20px;
+   width: 40%;
+   height: 2rem;
+    
+   cursor: pointer;
+}
+.decorador{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.centrarAux a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
