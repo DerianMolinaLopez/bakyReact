@@ -1,8 +1,12 @@
-import { BarraLateral } from "./aside"
+import { BarraLateral} from "./aside"
+import { BarraLateralDerecha } from "./generadorBotones"
+import { Principal } from "./principal"
 export function Union(){
     return(
-      <div>
+      <div className="esquemaPrincipal" >
         <BarraLateral/>
+        <Principal></Principal>
+         <BarraLateralDerecha> </BarraLateralDerecha>
       </div>
       
     )
