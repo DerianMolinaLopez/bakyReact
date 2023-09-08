@@ -5,8 +5,10 @@
      margin-bottom: 3px;
      border-right: solid #2F3336 1px; 
      padding-right: 4rem;
-     margin-right: 2rem;
+     
 }
+
+
 .boton{
     color:white;
     text-decoration: none;
@@ -15,9 +17,19 @@
 .union{
     display:flex;
     flex-direction: row;
-    margin-left: 1rem;
-    justify-content: space-around;
 
+    justify-content: space-between;
+
+}
+.asideAbsolute{
+    margin-left: 3rem;
+}
+.contenedorComponentesDinamicos{
+    margin-right: 4rem;
+    border-left: solid white 1px;
+}
+.encuadre{
+    border-left: solid white 1px;
 }
 .botonApariencia{
     display: flex;

@@ -1,9 +1,10 @@
 import './styles.css'
 export function BarraLateral() {
     return (
-        <div>
-            <aside>
-                <div className="aside">
+        <div >
+            <aside >
+                <div className='asideAbsolute' >
+                    <div className="aside">
                     <div className='botonApariencia'>
                         <a href="" className="boton">
                              <p><strong>Home</strong></p>
@@ -53,12 +54,8 @@ export function BarraLateral() {
                         <a href="" className="boton">
                             More
                         </a>
+                    </div>        
                     </div>
-
-                 
-
-
-
                 </div>
 
             </aside>
@@ -67,9 +64,9 @@ export function BarraLateral() {
 }
 export function BarraLateralDerecha() {
     return (
-        <div>
-            <aside>
-                <div className="contenedorComponentes">
+        <div >
+            <aside className="encuadre">
+                <div className="contenedorComponentesDinamicos">
                     <div className="contenedorComponentes__busqueda">
                         <input type="text" name="" id="" />
                     </div>
