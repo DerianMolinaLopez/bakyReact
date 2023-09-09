@@ -9,6 +9,7 @@ Arial,
 sans-serif;
 
 }
+
 /*
    
 "TwitterChirp"
@@ -46,6 +47,7 @@ sans-serif
 }
 .marco{
     margin-left: 4.5rem;
+    margin-top: 4rem;
 }
 .asideM{
     margin-right: 4rem;
@@ -72,6 +74,11 @@ sans-serif
     border-right: solid #2F3336 1px;
     border-left: solid #2F3336 1px;
 }
+.scroll-bar{
+  max-height: 30rem;
+  overflow: scroll;
+  width: 20rem;
+}
 .redondeo{
     border-radius: 20px;
     margin-bottom: 1.5rem;
@@ -87,8 +94,11 @@ sans-serif
    border-radius: 20px;
    width: 40%;
    height: 2rem;
-    
    cursor: pointer;
+   transition: .2s;
+}
+.botonEnlace:hover{
+   background-color: #1a8cd8e0;
 }
 .decorador{
     text-decoration: none;
@@ -104,4 +114,47 @@ sans-serif
    display: flex;
    justify-content: center;
    align-items: center;
+}
+p,h2{
+    font-family: var(--fuenteEnlace);
+}
+.exterior-tarjeta{
+    border-radius: 20px;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-family: var(--fuenteEnlace);
+    margin-top: 1.5rem;
+    padding: 1rem;
+    
+
+}
+.exterior-tarjeta:hover{
+   background-color: #181818;
+    
+
+}
+.imagen-tarjeta-dimensionar{
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+.textoUsuario{
+    text-decoration: none;
+    margin:0;
+    font-family: var(--fuenteEnlace);
+}
+.usuario-cuenta
+{
+    display: flex;
+    flex-direction: column;
+}
+.enlace-sin-decoracion {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Usa el color predeterminado del texto */
+    /* Agrega otros estilos personalizados si es necesario */
 }

@@ -90,7 +90,7 @@ export function GeneradorDeBotones() {
 
 export function BarraLateralDerecha(){
     return(
-        <div style={{width:'30%',margin:'2rem'}} className='marcoLateral'>
+        <div style={{width:'30%',margin:'2rem',marginTop:'3px'}} className='marcoLateral'>
             <aside>
                 <div >
                     <input className='buscador' type="text" name="" id="" placeholder='Search' />
@@ -121,7 +121,7 @@ export function Anuncio(){
   return(
     <div className='cardAnuncio'>
       <h2>Subscribe to Premium</h2>  
-      <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+      <strong><p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p></strong> 
       <div className='botonEnlace'>
         <a href="" className='decorador' ><strong>Suscribe</strong> </a>
       </div>
