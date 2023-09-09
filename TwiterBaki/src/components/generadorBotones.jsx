@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { What } from './tendencias';
 const arrayMensajes = ['Home', 'Explore', 'Notifications', 'Messages', 'Bookmarks', 'Lists', 'Profile', 'More'];
 const arrayIconos=[
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -79,8 +79,6 @@ export function GeneradorDeBotones() {
   for(let i =0; i<arrayMensajes.length;i++){
     botones.push(  <GeneradorBotones  texto={arrayMensajes[i]} icono={arrayIconos[i]}/>)
   }
-
-
   return (
     <div>
       {botones}
@@ -96,7 +94,7 @@ export function BarraLateralDerecha(){
                     <input className='buscador' type="text" name="" id="" placeholder='Search' />
                 </div>
                 <Anuncio></Anuncio>
-                
+                <What></What>
             </aside>
         </div>
     )
