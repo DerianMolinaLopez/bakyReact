@@ -5,8 +5,7 @@ export function What() {
                 <h3 style={{ color: 'White', marginLeft: '1rem' }}><strong>What’s happening</strong></h3>
                 <div>
                     <Whatsub encabezado='Noticia' titulo='deforestacion' post='11k'/>
-                    <div></div>
-                    <div></div>
+                    <GeneradorNoticiasBaki/>
                 </div>
             </div>
         </section>
@@ -33,27 +32,28 @@ function Whatsub(props) {
         </article>
     );
 }
+// Generador de noticias de Baki
 function GeneradorNoticiasBaki() {
-  const noticias = [
-    { encabezado: 'Tending in Mexico', titulo: 'Pickle', post: '1m' },
-    { encabezado: 'News', titulo: 'Pickle', post: '12k' },
-    { encabezado: 'The man', titulo: 'Yujiro Hanma', post: '3k' },
-    { encabezado: 'Sports', titulo: 'Kaio Retsu in Box World', post: '1k' },
-  ];
-
-  // Mapeamos las noticias y generamos componentes NoticiaBaki para cada una
-  const componentesNoticias = noticias.map((noticia, index) => (
-    <NoticiaBaki
-      key={index}
-      encabezado={noticia.encabezado}
-      titulo={noticia.titulo}
-      post={noticia.post}
-    />
-  ));
-
-  return (
-    <div>
-      {componentesNoticias}
-    </div>
-  );
-}
+    const noticias = [
+      { encabezado: 'Tending in Mexico', titulo: 'Pickle', post: '1m' },
+      { encabezado: 'News', titulo: 'Pickle', post: '12k' },
+      { encabezado: 'The man', titulo: 'Yujiro Hanma', post: '3k' },
+      { encabezado: 'Sports', titulo: 'kaio retrsu in the world of boxing', post: '1k' },
+    ];
+  
+    // Mapeamos las noticias y generamos componentes NoticiaBaki para cada una
+    const componentesNoticias = noticias.map((noticia, index) => (
+      <Whatsub
+        key={index}
+        encabezado={noticia.encabezado}
+        titulo={noticia.titulo}
+        post={noticia.post}
+      />
+    ));
+  
+    return (
+      <div>
+        {componentesNoticias}
+      </div>
+    );
+  }

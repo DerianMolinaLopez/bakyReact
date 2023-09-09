@@ -186,3 +186,8 @@ p,h2{
 .decolorar{
    color: #43464d;
 }
+@media (max-width: 972px) { /*elimina la barra lateral cuando el tamaño es menor a cierto tamaño*/
+    .marcoLateral {
+        display: none;
+    }
+}
