@@ -210,31 +210,95 @@ p,h2{
     position: fixed;
     width: 46.5%;
     z-index: 100;
-    border-bottom: solid #2F3336 1px; 
+    border-bottom: solid #2F3336 1px;
     font-family: var(--fuenteEnlace);
+    top: 0; /* Mantén el encabezado en la parte superior */
   }
-@media (max-width: 1244px) { /*elimina la barra lateral  izqueirda cuando el tamaño es menor a cierto tamaño*/
-   
-}
-.activacion{
+  
+  .activacion {
     background-color: rgb(29, 155, 240);
-}
+  }
+  
   .content {
-    margin-top: 80px; /* Ajusta esto según la altura de tu encabezado */
+    margin-top: 80px; /* Ajusta esto según la altura del encabezado */
     /* Resto de estilos para el contenido principal */
   }
-.opciones{
-   display:grid;
-   grid-template-columns: repeat(2,1fr);
-   
-}
-.centrado{
+  
+  .opciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .centrado {
     display: flex;
     justify-content: center;
-    flex-direction: center;
     align-items: center;
-}
-
-.agrandado{
+  }
+  
+  .agrandado {
     height: 100%;
-}
+  }
+  
+ .escritura{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #000000;
+    border: none;
+ }
+ .inputPost{
+    margin-left: 2rem;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #000000;
+    color:#ffffff63 ;
+    font-size: 2rem;
+    border: none;
+ }
+  
+  
+  .marginar {
+    margin-top: 100px; /* Agrega un margen superior al contenido sin afectar al encabezado */
+  }
+  .postIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .icons_betwen {
+    display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-right: 7rem;
+  padding-left: 3rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  }
+  
+  .botonIcon {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+    height: 2.5rem;
+    font-family: var(--fuenteEnlace);
+    
+  }
+  
+  /*
+  para icons betwen
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-right: 5rem;
+  padding-left: 2rem;
+  margin-left: 3rem;
+  */
+  /*
+  para el div del boton
+  margin-right: 4rem;
+  */
+  .encuadrar{
+    margin-top:8rem ;
+    border-bottom: solid #2F3336  1px ;
+  }

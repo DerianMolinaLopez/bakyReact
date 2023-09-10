@@ -16,7 +16,7 @@ export function Tarjeta(props) {
                     </div>
                     {mostrarBoton && (
                         <div className="seguir">
-                            <button>Seguir</button>
+                            <button><span><strong>Seguir</strong></span></button>
                         </div>
                     )}
                 </div>
