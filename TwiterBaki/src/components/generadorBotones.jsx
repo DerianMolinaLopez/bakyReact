@@ -72,8 +72,7 @@ function GeneradorBotones(props) {
       </div>
     </div>
   );
-}
-
+  }
 export function GeneradorDeBotones() {
   const botones = []
   for(let i =0; i<arrayMensajes.length;i++){
@@ -91,6 +90,7 @@ export function BarraLateralDerecha(){
         <div style={{width:'30%',margin:'2rem',marginTop:'3px'}} className='marcoLateral'>
             <aside>
                 <div >
+              
                     <input className='buscador' type="text" name="" id="" placeholder='Search' />
                 </div>
                 <Anuncio></Anuncio>

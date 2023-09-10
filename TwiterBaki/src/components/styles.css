@@ -45,10 +45,17 @@ sans-serif
     border-left: solid #2F3336 1px;
 
 }
-.marco{
+.marco {
     margin-left: 4.5rem;
     margin-top: 4rem;
-}
+    width: 320px; /* Ancho fijo en píxeles */
+  }
+  
+  .scroll-bar {
+    max-height: 30rem;
+    overflow: scroll;
+    width: 320px; /* Ancho fijo en píxeles */
+  }
 .asideM{
     margin-right: 4rem;
     
@@ -74,17 +81,16 @@ sans-serif
     border-right: solid #2F3336 1px;
     border-left: solid #2F3336 1px;
 }
-.scroll-bar{
-  max-height: 30rem;
-  overflow: scroll;
-  width: 20rem;
-}
+
 .redondeo{
     border-radius: 20px;
     margin-bottom: 1.5rem;
     width: auto;
     height: 2rem;
     transition: .2s;
+}
+.extencion{
+    width: 100%;
 }
 .redondeo:hover{
     background-color: #2F3336;
@@ -190,4 +196,45 @@ p,h2{
     .marcoLateral {
         display: none;
     }
+    
+}
+@media (max-width: 968px) { 
+    .header {
+        position: fixed;
+        width: 50rem;
+        z-index: 100;
+        background-color: wheat;
+      }
+}
+.header {
+    position: fixed;
+    width: 46.5%;
+    z-index: 100;
+    border-bottom: solid #2F3336 1px; 
+    font-family: var(--fuenteEnlace);
+  }
+@media (max-width: 1244px) { /*elimina la barra lateral  izqueirda cuando el tamaño es menor a cierto tamaño*/
+   
+}
+.activacion{
+    background-color: rgb(29, 155, 240);
+}
+  .content {
+    margin-top: 80px; /* Ajusta esto según la altura de tu encabezado */
+    /* Resto de estilos para el contenido principal */
+  }
+.opciones{
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    align-items: center;
+}
+
+.agrandado{
+    height: 100%;
 }
