@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DerianFoto from '../img/DerianFoto.png'
 import { Publicacion } from './publicacion';
+import { generarPublicaciones } from './publicacion';
 import Cbum from '../img/cbum.jpg'
 export function Principal() {
   return (
@@ -11,6 +12,9 @@ export function Principal() {
         </Encabezado>
         <Posteo></Posteo>
         <Publicacion foto={Cbum} nombre='CBUMoficial' usuario='cbup'horas='12h' contenido='hola' ></Publicacion>
+        <div>
+      {generarPublicaciones()}
+    </div>
       </main>
 
     </div>
