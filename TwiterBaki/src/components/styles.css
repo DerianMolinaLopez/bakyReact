@@ -193,12 +193,11 @@ p,h2{
    color: #43464d;
 }
 @media (max-width: 972px) { /*elimina la barra lateral cuando el tamaño es menor a cierto tamaño*/
-    .marcoLateral {
+    .marcoLateral, .eliminacion , .centrarAux .boton{
         display: none;
     }
-    .centrarAux .boton{
-      display: none;
-    }
+    
+    
     .asideM {
      
       margin-right: auto;
@@ -222,7 +221,36 @@ p,h2{
           
           width: 112px;
           }
+          .header {
+            position: fixed;
+            width: 79.4%;
+            z-index: 100;
+            border-bottom: solid #2F3336 1px;
+            font-family: var(--fuenteEnlace);
+            top: 0; /* Mantén el encabezado en la parte superior */
+            background-color: #000000;
+          }
+          
     
+}
+@media (max-width: 1106px) { 
+   .botonEnlace{
+      width: 70%;
+   }  
+        
+  
+}
+@media (min-width: 972px) { /*elimina la barra lateral cuando el tamaño es menor a cierto tamaño*/
+  .header {
+    position: fixed;
+    width: 46.5%;
+    z-index: 100;
+    border-bottom: solid #2F3336 1px;
+    font-family: var(--fuenteEnlace);
+    top: 0; /* Mantén el encabezado en la parte superior */
+    background-color: #000000;
+  }
+  
 }
 /*
 @media (max-width: 968px) { 
@@ -234,17 +262,17 @@ p,h2{
       }
 }
 */
-
+/*
 .header {
     position: fixed;
-    width: 46.5%;
+    width: 44rem;
     z-index: 100;
     border-bottom: solid #2F3336 1px;
     font-family: var(--fuenteEnlace);
-    top: 0; /* Mantén el encabezado en la parte superior */
+    top: 0; 
     background-color: #000000;
   }
-  
+  */
   .activacion {
     background-color: rgb(29, 155, 240);
   }

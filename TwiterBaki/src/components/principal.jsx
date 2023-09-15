@@ -49,6 +49,7 @@ function Encabezado() {
   };
 
   return (
+    
     <div className="header">
       <h1 style={{ color: 'white', marginLeft: '2rem' }}>Home</h1>
       <div className="opciones">
