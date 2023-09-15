@@ -79,27 +79,27 @@ export function generarPublicaciones(){
   const publicacionesData = [
     {
       foto: Baki,
-      nombre: "Nombre 1",
-      usuario: "@usuario1",
+      nombre: "Baki",
+      usuario: "@Baki01",
       horas: "Hace 2 horas",
       contenido: "Contenido de la publicación 1",
     },
     {
       foto: Doryan,
-      nombre: "Nombre 2",
-      usuario: "@usuario2",
-      horas: "Hace 3 horas",
+      nombre: "Kaioh Doryan",
+      usuario: "@DoryanKahio",
+      horas: "3sep",
       contenido: "Contenido de la publicación 2",
     },{
       foto: Jack,
-      nombre: "Nombre 2",
-      usuario: "@usuario2",
-      horas: "Hace 3 horas",
+      nombre: "Jack Hanma",
+      usuario: "@HJACK",
+      horas: "Hace 12 horas",
       contenido: "Contenido de la publicación 2",
     },{
       foto: Doyle,
-      nombre: "Nombre 2",
-      usuario: "@usuario2",
+      nombre: "Hector Doyle",
+      usuario: "@HDoyle",
       horas: "Hace 3 horas",
       contenido: "Contenido de la publicación 2",
     }
