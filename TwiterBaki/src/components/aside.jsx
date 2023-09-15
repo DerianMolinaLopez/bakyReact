@@ -8,7 +8,7 @@ export function BarraLateral() {
             <aside className='asideM'>
                 
                 <GeneradorDeBotones></GeneradorDeBotones>
-                <div className='botonEnlace' style={{ width: '100%', height: '3rem' }}>
+                <div className='botonEnlace botnAgrupado' style={{ width: '100%', height: '3rem' }}>
                     <a href="" className='decorador'>
                         <p>
                             <strong>
