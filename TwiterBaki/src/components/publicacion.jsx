@@ -4,8 +4,14 @@ import  Baki from '../img/baki.jpg'
 import  Doryan from '../img/doryan.jpg'
 import  Doyle from '../img/Hector Doyle.jpg'
 import  Jack from '../img/jack.jpg'
+import  oliver from '../img/oliver.jpg'
+import  olivertraje from '../img/oliverTraje.jpg'
+import  padre from '../img/padreHijo.jpg'
+import  derrota from '../img/derrota.jpg'
+import  jackfoto from '../img/jackfoto.jpg'
+import  ogro from '../img/Yujiro.jpg'
 export function Publicacion(props) {
-  const { foto, nombre, usuario, horas, contenido } = props
+  const { foto, nombre, usuario, horas, contenido ,imagencontenido} = props
   return (
     <div className="contenedor_publicacion">
       <article style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
@@ -23,6 +29,9 @@ export function Publicacion(props) {
               <p>
                 {contenido}
               </p>
+              {imagencontenido && (
+                      <img src={imagencontenido} alt="" style={{width:'100%'}} />
+                    )}
             </div>
             <ContenedorIconos></ContenedorIconos>
           </div>
@@ -83,25 +92,48 @@ export function generarPublicaciones(){
       usuario: "@Baki01",
       horas: "Hace 2 horas",
       contenido: "Contenido de la publicación 1",
+      imagencontenido:padre
+      
+      
     },
     {
       foto: Doryan,
       nombre: "Kaioh Doryan",
       usuario: "@DoryanKahio",
       horas: "3sep",
-      contenido: "Contenido de la publicación 2",
+      contenido: "¿Dulces?",
+  
     },{
       foto: Jack,
       nombre: "Jack Hanma",
       usuario: "@HJACK",
       horas: "Hace 12 horas",
-      contenido: "Contenido de la publicación 2",
+      contenido:"Carne asada",
+      imagencontenido:jackfoto
+   
     },{
       foto: Doyle,
       nombre: "Hector Doyle",
       usuario: "@HDoyle",
       horas: "Hace 3 horas",
-      contenido: "Contenido de la publicación 2",
+      contenido: "",
+      imagencontenido:derrota
+      
+    },
+    {
+      foto: oliver,
+      nombre: "Oliver",
+      usuario: "@Mr.Olivia",
+      horas: "Hace 3 horas",
+      contenido: "Listo para ir con mi novia", 
+      imagencontenido:olivertraje
+    },
+    {
+      foto: ogro,
+      nombre: "Yujiro Hannma",
+      usuario: "@Ogro",
+      horas: "Hace 23 horas",
+      contenido: "¿como se usa esto baki?"
     }
     // Agrega más objetos de datos de publicaciones según sea necesario
   ];
@@ -113,6 +145,7 @@ export function generarPublicaciones(){
       usuario={publicacion.usuario}
       horas={publicacion.horas}
       contenido={publicacion.contenido}
+      imagencontenido={publicacion.imagencontenido}
     />
   ));
   
