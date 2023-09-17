@@ -50,6 +50,7 @@ sans-serif
     margin-top: 4rem;
     position:fixed;
     width: 320px; /* Ancho fijo en píxeles */
+    margin-left: auto;
   }
   
   .scroll-bar {
@@ -57,6 +58,7 @@ sans-serif
     max-width: 15rem;
     overflow: scroll;
     width: 320px; /* Ancho fijo en píxeles */
+    margin-left: auto;
   }
 .asideM{
     margin-right: 4rem;
@@ -203,8 +205,11 @@ p,h2{
       width: 50rem;
       border-right: solid #2F3336 1px;
       border-left: solid #2F3336 1px;
-      margin-left: 10rem;
+      margin-left: 5rem;
+      margin-right: auto;
+      
     }
+    
     .asideM {
      
       margin-right: auto;
@@ -256,6 +261,20 @@ p,h2{
     font-family: var(--fuenteEnlace);
     top: 0; /* Mantén el encabezado en la parte superior */
     background-color: #000000;
+  }
+  .scroll-bar {
+    max-height: 30rem;
+    max-width: 15rem;
+    overflow: scroll;
+    width: 320px;
+    margin-right: auto;
+  }
+  .marco {
+    margin-left: 4.5rem;
+    margin-top: 4rem;
+    position: fixed;
+    width: 320px;
+    margin-left:4rem;
   }
   
   
