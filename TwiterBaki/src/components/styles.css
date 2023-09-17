@@ -48,11 +48,13 @@ sans-serif
 .marco {
     margin-left: 4.5rem;
     margin-top: 4rem;
+    position:fixed;
     width: 320px; /* Ancho fijo en píxeles */
   }
   
   .scroll-bar {
     max-height: 30rem;
+    max-width: 15rem;
     overflow: scroll;
     width: 320px; /* Ancho fijo en píxeles */
   }
@@ -80,6 +82,7 @@ sans-serif
     width: 50rem;
     border-right: solid #2F3336 1px;
     border-left: solid #2F3336 1px;
+    margin-left: 20rem;
 }
 
 .redondeo{
@@ -196,8 +199,12 @@ p,h2{
     .marcoLateral, .eliminacion , .centrarAux .boton{
         display: none;
     }
-    
-    
+    .contenedorPrincipal {
+      width: 50rem;
+      border-right: solid #2F3336 1px;
+      border-left: solid #2F3336 1px;
+      margin-left: 10rem;
+    }
     .asideM {
      
       margin-right: auto;
@@ -250,6 +257,8 @@ p,h2{
     top: 0; /* Mantén el encabezado en la parte superior */
     background-color: #000000;
   }
+  
+  
   
 }
 /*
@@ -458,3 +467,4 @@ p,h2{
 .colorIconoComentario:hover{
   background-color: #0A1720;
 }
+/*media query para controlar cuando haces un scroll*/
